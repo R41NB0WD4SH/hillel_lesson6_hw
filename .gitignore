@@ -6,3 +6,8 @@
 *.targets
 *.props
 *.editorconfig
+Hillel_Lesson6_HW/obj/Debug/net7.0/apphost
+*.txt
+*.dll
+*.pdb
+*.xml
