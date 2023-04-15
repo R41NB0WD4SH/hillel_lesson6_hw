@@ -1,0 +1,8 @@
+
+*.cache
+*.xml
+*.json
+*.info
+*.targets
+*.props
+*.editorconfig
