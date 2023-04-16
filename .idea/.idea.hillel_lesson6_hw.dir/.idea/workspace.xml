@@ -4,12 +4,7 @@
     <projectFile>Hillel_Lesson6_HW/Hillel_Lesson6_HW.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9349aa97-4886-4836-9649-d556558b2578" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hillel_lesson6_hw.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hillel_lesson6_hw.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hillel_Lesson6_HW/Lottery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Lottery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hillel_Lesson6_HW/StatOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/StatOperations.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9349aa97-4886-4836-9649-d556558b2578" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +84,7 @@
       <workItem from="1681491896967" duration="25000" />
       <workItem from="1681580383198" duration="836000" />
       <workItem from="1681582752403" duration="2000" />
-      <workItem from="1681582907950" duration="13864000" />
+      <workItem from="1681582907950" duration="14597000" />
     </task>
     <servers />
   </component>
@@ -105,13 +100,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs</url>
-          <line>89</line>
+          <line>92</line>
           <properties documentPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" initialLine="30" containingFunctionPresentation="method 'Main'">
             <startOffsets>
-              <option value="2513" />
+              <option value="2666" />
             </startOffsets>
             <endOffsets>
-              <option value="2531" />
+              <option value="2684" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
