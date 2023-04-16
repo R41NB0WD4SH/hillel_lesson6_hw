@@ -4,33 +4,39 @@ namespace Hillel_Lesson6_HW;
 
 public static class StatOperations
 {
-    public static void NeverAppeared(List<Number> allNumbers)
+    public static void NeverAppeared(Dictionary<int, int> allNumbers)
     {
         Console.WriteLine("Never Appeared Numbers:");
         Console.WriteLine();
 
-        for (int i = 0; i < allNumbers.Count; i++)
+        HashSet<int> neverAppeared = new HashSet<int>();
+
+        foreach (KeyValuePair<int, int> number in allNumbers)
         {
-            if (allNumbers[i].Frequency == 0)
+            if (number.Value == 0)
             {
-                Console.Write("{0} ", allNumbers[i].Index);
+                neverAppeared.Add(number.Key);
+                Console.Write("{0} ", number.Key);
             }
         }
 
     }
 
-    public static void MostAppeared(List<Number> allNumbers, int top)
+    public static void MostAppeared(Dictionary<int, int> allNumbers)
     {
         Console.WriteLine("Most Appeared Numbers:");
         Console.WriteLine();
+
+        var sortedAllNumbers = allNumbers.OrderByDescending(number => number.Value);
         
-        Number[] topNumbers = new Number[top];
 
-        topNumbers = allNumbers.OrderByDescending(number => number.Frequency).ToArray();
-
-        for (int i = 0; i < top; i++)
+        foreach (KeyValuePair<int, int> number in sortedAllNumbers)
         {
-            Console.WriteLine("Index:{0} Frequency:{1}", topNumbers[i].Index, topNumbers[i].Frequency);
+            if (number.Value != 0)
+            {
+                Console.Write("{0} - {1} times, ", number.Key, number.Value);
+            }
+            
         }
     }
 }

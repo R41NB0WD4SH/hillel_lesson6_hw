@@ -9,121 +9,92 @@ namespace Hillel_Lesson6_HW
         static void Main(string[] args)
         {
 
-            const int numbersCount = 101;
+            const int numbersCount = 37;
+            
+            const int tenGamesCheck = 9;
+            const int fiftyGamesCheck = 49;
+            const int oneHundredGamesCheck = 99;
+
+            const int gamesCount = 100;
 
 
-            List<Number> allNumbers = new List<Number>();
 
-            for (int i = 0; i < numbersCount; i++)
+            Dictionary<int, int> allNumbers = new Dictionary<int, int>(36);
+
+
+            for (int i = 1; i < numbersCount; i++)
             {
-                allNumbers.Add(new Number(i));
+                allNumbers.Add(i, 0);
             }
 
 
-            const int firstPlayday = 10;
-            const int secondPlayday = 50;
-            const int thirdPlayday = 100;
-
-            const int quantityOfWinNumbers = 10;
-
-            int[][] firstPlaydayResutls = new int[firstPlayday][];
-            int[][] secondPlaydayResutls = new int[secondPlayday][];
-            int[][] thirdPlaydayResutls = new int[thirdPlayday][];
-
-
-            #region -=- FIRST_DAY_RESULTS -=-=
-
-            Console.WriteLine("FIRST DAY");
-            
-            Lottery.GenerateDayResults(firstPlaydayResutls, quantityOfWinNumbers, allNumbers);
-            
-            Lottery.ShowDayResults(firstPlaydayResutls);
-            
-            
-            #endregion
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("============================================");
+            Console.WriteLine("FIRST PLAYDAY");
             Console.WriteLine();
             Console.WriteLine();
             
-            StatOperations.NeverAppeared(allNumbers);
             
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            StatOperations.MostAppeared(allNumbers, 10);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            #region -=- SECOND_DAY_RESULTS -=-
+            for (int i = 0; i < gamesCount; i++)
+            {
+                int[] winNumbers;
 
-            Console.WriteLine("SECOND DAY");
-            
-            Lottery.GenerateDayResults(secondPlaydayResutls, quantityOfWinNumbers, allNumbers);
-            
-            Lottery.ShowDayResults(secondPlaydayResutls);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            StatOperations.NeverAppeared(allNumbers);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            StatOperations.MostAppeared(allNumbers, 10);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            #endregion
+                winNumbers = Lottery.Emit(8, 37, allNumbers).ToArray();
 
-            
-            #region -=- THIRD_DAY_RESULTS -=-
+                Console.Write("{0} Win Numbers: ", i + 1);
 
-            Console.WriteLine("THIRD DAY");
+                for (int j = 0; j < winNumbers.Length; j++)
+                {
+                    Console.Write("{0} ", winNumbers[j]);
+                }
+
+                if (i == tenGamesCheck)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("{0} GAMES STAT", tenGamesCheck + 1);
+                    StatOperations.NeverAppeared(allNumbers);
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    StatOperations.MostAppeared(allNumbers);
+                    Console.WriteLine();
+                }
+                
+                if (i == fiftyGamesCheck)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("{0} GAMES STAT", fiftyGamesCheck + 1);
+                    StatOperations.NeverAppeared(allNumbers);
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    StatOperations.MostAppeared(allNumbers);
+                    Console.WriteLine();
+                }
+                
+                if (i == oneHundredGamesCheck)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("{0} GAMES STAT", oneHundredGamesCheck + 1);
+                    StatOperations.NeverAppeared(allNumbers);
+                    Console.WriteLine();
+                    Console.WriteLine();
+                    StatOperations.MostAppeared(allNumbers);
+                    Console.WriteLine();
+                }
+
+                Console.WriteLine();
+            }
             
-            Lottery.GenerateDayResults(thirdPlaydayResutls, quantityOfWinNumbers, allNumbers);
             
-            Lottery.ShowDayResults(thirdPlaydayResutls);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            #endregion
-            
-            StatOperations.NeverAppeared(allNumbers);
-            
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("============================================");
-            Console.WriteLine();
-            Console.WriteLine();
-            
-            StatOperations.MostAppeared(allNumbers, 10);
+
+
+
 
             Console.ReadKey();
+
+
+ 
+
         }
     }
 }
