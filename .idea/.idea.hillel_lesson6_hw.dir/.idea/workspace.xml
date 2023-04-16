@@ -4,13 +4,7 @@
     <projectFile>Hillel_Lesson6_HW/Hillel_Lesson6_HW.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9349aa97-4886-4836-9649-d556558b2578" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Lottery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Number.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/StatOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hillel_lesson6_hw.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hillel_lesson6_hw.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9349aa97-4886-4836-9649-d556558b2578" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +22,7 @@
     <setting file="file://$USER_HOME$/Desktop/BackUps/hillel_lesson6_hw/Hillel_Lesson6_HW/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/BackUps/hillel_lesson6_hw/Hillel_Lesson6_HW/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/BackUps/hillel_lesson6_hw/Hillel_Lesson6_HW/StatOperations.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c03ecbf882ec617b54fbd5b46063c091a895e6f24a14a0411120ddd7f0ea7b/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,21 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DebuggerViewTab_PTCS_FirstProportionKey": "0.3496708",
+    "DebuggerViewTab_PTCS_LastProportionKey": "0.0",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/denis.klimovets/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/denis.klimovets/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/denis.klimovets/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/denis.klimovets/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
+      "/Users/denis.klimovets/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
+      "/Users/denis.klimovets/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Hillel_Lesson6_HW" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -87,7 +84,7 @@
       <workItem from="1681491896967" duration="25000" />
       <workItem from="1681580383198" duration="836000" />
       <workItem from="1681582752403" duration="2000" />
-      <workItem from="1681582907950" duration="1348000" />
+      <workItem from="1681582907950" duration="14597000" />
     </task>
     <servers />
   </component>
@@ -97,5 +94,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs</url>
+          <line>92</line>
+          <properties documentPath="$PROJECT_DIR$/Hillel_Lesson6_HW/Program.cs" initialLine="30" containingFunctionPresentation="method 'Main'">
+            <startOffsets>
+              <option value="2666" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2684" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
